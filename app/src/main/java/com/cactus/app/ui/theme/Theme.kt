@@ -1,0 +1,5 @@
+package com.cactus.app.ui.theme
+import androidx.compose.material3.*; import androidx.compose.runtime.Composable; import androidx.compose.ui.text.TextStyle; import androidx.compose.ui.text.font.FontWeight; import androidx.compose.ui.unit.sp
+private val typography = Typography(displaySmall = TextStyle(fontWeight = FontWeight.ExtraBold, fontSize = 28.sp, letterSpacing = (-0.5).sp), titleLarge = TextStyle(fontWeight = FontWeight.Bold, fontSize = 18.sp), titleMedium = TextStyle(fontWeight = FontWeight.SemiBold, fontSize = 15.sp), bodyLarge = TextStyle(fontWeight = FontWeight.Normal, fontSize = 15.sp), bodyMedium = TextStyle(fontWeight = FontWeight.Medium, fontSize = 13.sp), labelLarge = TextStyle(fontWeight = FontWeight.Bold, fontSize = 14.sp))
+private val colors = lightColorScheme(primary = CactusColors.Black, onPrimary = CactusColors.White, background = CactusColors.White, onBackground = CactusColors.Neutral900, surface = CactusColors.White, onSurface = CactusColors.Neutral900, error = CactusColors.Red500)
+@Composable fun CactusTheme(content: @Composable () -> Unit) { MaterialTheme(colorScheme = colors, typography = typography, content = content) }

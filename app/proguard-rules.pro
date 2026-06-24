@@ -1,0 +1,20 @@
+-keep class dagger.hilt.** { *; }
+-keep class * extends androidx.lifecycle.ViewModel { *; }
+-keep class * extends androidx.room.RoomDatabase { *; }
+-keep @androidx.room.Entity class * { *; }
+-keep @androidx.room.Dao interface * { *; }
+-keep class androidx.room.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+-dontwarn retrofit2.**
+-dontwarn okhttp3.**
+-dontwarn okio.**
+-keep class kotlinx.coroutines.** { *; }
+-keep class * extends androidx.work.CoroutineWorker { *; }
+-keep class com.cactus.app.data.subtitle.SubtitlePipelineWorker { *; }
+-keep class androidx.security.crypto.** { *; }
+-keep class com.cactus.app.data.model.** { *; }
+-keep class com.cactus.app.data.db.entity.** { *; }
+-keep class com.cactus.app.data.network.** { *; }
+-keep @kotlinx.serialization.Serializable class com.cactus.app.data.network.** { *; }
+-keep class androidx.media3.** { *; }

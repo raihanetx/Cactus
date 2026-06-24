@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/notification_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="#FF020617" android:paddingLeft="24dp" android:paddingRight="24dp" android:paddingTop="22dp" android:paddingBottom="22dp">
+    <TextView android:id="@+id/track_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="Cactus" android:textColor="#FFFFFFFF" android:textSize="15sp" android:textStyle="bold" android:singleLine="true" android:ellipsize="end" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal" android:gravity="center_vertical">
+        <TextView android:id="@+id/time_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0:00" android:textColor="#99FFFFFF" android:textSize="10sp" android:textStyle="bold" android:layout_marginRight="8dp" />
+        <ProgressBar android:id="@+id/progress_bar" style="?android:attr/progressBarStyleHorizontal" android:layout_width="0dp" android:layout_height="5dp" android:layout_weight="1" android:max="1000" android:progress="0" android:progressBackgroundTint="#33FFFFFF" android:progressTint="#FFFFFFFF" />
+        <TextView android:id="@+id/time_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0:00" android:textColor="#99FFFFFF" android:textSize="10sp" android:textStyle="bold" android:layout_marginLeft="8dp" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:orientation="horizontal" android:gravity="center">
+        <TextView android:id="@+id/btn_backward" android:layout_width="0dp" android:layout_height="28dp" android:layout_weight="1" android:gravity="center" android:text="-10s" android:textColor="#CCFFFFFF" android:textSize="12sp" android:textStyle="bold" android:clickable="true" android:focusable="true" />
+        <TextView android:id="@+id/btn_play_pause" android:layout_width="wrap_content" android:layout_height="28dp" android:gravity="center" android:paddingLeft="18dp" android:paddingRight="18dp" android:background="@drawable/ghost_button_primary" android:text="PLAY" android:textColor="#FFFFFFFF" android:textSize="12sp" android:textStyle="bold" android:clickable="true" android:focusable="true" />
+        <TextView android:id="@+id/btn_forward" android:layout_width="0dp" android:layout_height="28dp" android:layout_weight="1" android:gravity="center" android:text="+10s" android:textColor="#CCFFFFFF" android:textSize="12sp" android:textStyle="bold" android:clickable="true" android:focusable="true" />
+    </LinearLayout>
+</LinearLayout>

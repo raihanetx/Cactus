@@ -1,0 +1,8 @@
+.gradle/
+app/build/
+local.properties
+keystore.properties
+cactus-release.keystore
+jdk17/
+*.iml
+.idea/
