@@ -54,7 +54,7 @@ class PlaybackService : Service() {
             setTextViewText(R.id.time_duration, TimeUtils.formatDurationShort(s.durationMs))
             val fraction = if (s.durationMs > 0) (s.currentPositionMs.toFloat() / s.durationMs.toFloat()).coerceIn(0f, 1f) else 0f
             setProgressBar(R.id.progress_bar, 1000, (fraction * 1000).toInt(), false)
-            setTextViewText(R.id.btn_play_pause_text, if (s.isPlaying) "Pause" else "Play")
+            setTextViewText(R.id.btn_play_pause, if (s.isPlaying) "Pause" else "Play")
             setOnClickPendingIntent(R.id.btn_play_pause, togglePi)
             setOnClickPendingIntent(R.id.btn_backward, seekBackPi)
             setOnClickPendingIntent(R.id.btn_forward, seekForwardPi)
