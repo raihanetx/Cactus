@@ -137,7 +137,7 @@
         <TextView
             android:id="@+id/btn_backward"
             android:layout_width="44dp"
-            android:layout_height="36dp"
+            android:layout_height="80dp"
             android:gravity="center"
             android:text="-10s"
             android:textColor="#FF525252"
@@ -149,12 +149,10 @@
         <TextView
             android:id="@+id/btn_play_pause"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:gravity="center"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
-            android:paddingTop="32dp"
-            android:paddingBottom="32dp"
             android:text="Play"
             android:textColor="#000000"
             android:textSize="14sp"
@@ -168,7 +166,7 @@
         <TextView
             android:id="@+id/btn_forward"
             android:layout_width="44dp"
-            android:layout_height="36dp"
+            android:layout_height="80dp"
             android:gravity="center"
             android:text="+10s"
             android:textColor="#FF525252"
