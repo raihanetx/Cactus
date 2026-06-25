@@ -155,8 +155,8 @@
             android:padding="1dp"
             android:clickable="true"
             android:focusable="true"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp">
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
 
             <TextView
                 android:id="@+id/btn_play_pause_text"
