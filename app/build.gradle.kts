@@ -16,11 +16,11 @@ if (keystorePropertiesFile.exists()) { keystoreProperties.load(FileInputStream(k
 
 android {
     namespace = "com.cactus.app"
-    compileSdk = 34
+    compileSdk = 36
     defaultConfig {
         applicationId = "com.cactus.app"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 57
         versionName = "2.10.0"
     }
